@@ -3,17 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Burma Link Channel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #1a237e;
+            color: white;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .main-content {
+            display: flex;
+            gap: 40px;
+        }
+
+        
+        .right-section {
+            flex: 1;
+            margin-top: 100px;
+        }
+        .photo-placeholder {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .login-form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 60px;
+            border-radius: 10px;
+        }
+        .login-form h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            margin-left: 110px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid black;
+        }
+        
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .form-group button {
+ 
+            padding: 12px 30px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: medium;
+            
+        }
+
+        .form-group button:hover{
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <form action="" class="form">
-            <h2>LOGIN</h2>
-            <input type="email" name="email" class="box" placeholder="Enter Email">
-            <input type="password" name="password" class="box" placeholder="Enter Password">
-            <input type="submit" value="SING IN" id="submit">
-        </form>
-    </div>"
+        <header class="header">
+            <img src="./Burma_Link_logo.png" alt="Burma_Link_Logo" class="logo">
+            <h1>Burma Link Channel</h1>
+        </header>
+        <div class="main-content">
+            <div class="left-section">
+                <div class="photo-placeholder">
+                    <img src="./undraw_mobile_content_xvgr.svg" alt="Admin Sign In" style="width: 100%;">
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="login-form">
+                    <h2>Admin Sign In</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="remember"> Remember Me
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="forgot-password">
+                        <a href="#">Forget Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
